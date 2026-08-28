@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetario de Cocina - TheMealDB</title>
+    <!-- Punto 3: Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Estructura Semántica: Header y Nav -->
+    <header class="header">
+        <div class="logo">
+            <h1>🍳 SaborDB</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#recetas">Recetas</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Estructura Semántica: Main -->
+    <main class="main-content">
+        
+        <!-- Sección Hero / Bienvenida -->
+        <section id="inicio" class="hero-section">
+            <h2>Encuentra tus recetas favoritas</h2>
+            <p>Explora miles de platillos utilizando la base de datos de TheMealDB.</p>
+        </section>
+
+        <!-- Sección de Grid para las Recetas -->
+        <section id="recetas" class="recipes-section">
+            <h2>Recetas Destacadas</h2>
+            
+            <div class="recipes-grid">
+                <!-- Tarjeta 1 -->
+                <article class="recipe-card">
+                    <img src="https://www.themealdb.com/images/media/meals/58o10a1562512610.jpg" alt="Arrabiata">
+                    <div class="recipe-info">
+                        <h3>Spaghetti Arrabiata</h3>
+                        <p>Categoría: Italian</p>
+                        <a href="https://www.themealdb.com/meal/52772" target="_blank" class="btn">Ver Receta Completa</a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article class="recipe-card">
+                    <img src="https://www.themealdb.com/images/media/meals/utxqpt1511639216.jpg" alt="Beef Sunday Roast">
+                    <div class="recipe-info">
+                        <h3>Beef Sunday Roast</h3>
+                        <p>Categoría: Beef</p>
+                        <a href="https://www.themealdb.com/meal/52824" target="_blank" class="btn">Ver Receta Completa</a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="recipe-card">
+                    <img src="https://www.themealdb.com/images/media/meals/wv103p1560439401.jpg" alt="Teriyaki Chicken Casserole">
+                    <div class="recipe-info">
+                        <h3>Teriyaki Chicken Casserole</h3>
+                        <p>Categoría: Chicken</p>
+                        <a href="https://www.themealdb.com/meal/52775" target="_blank" class="btn">Ver Receta Completa</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Estructura Semántica: Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Recetario de Cocina - Alimentado por <a href="https://www.themealdb.com/" target="_blank">TheMealDB</a></p>
+    </footer>
+
+</body>
+</html>
