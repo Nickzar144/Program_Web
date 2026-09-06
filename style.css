@@ -147,4 +147,94 @@ body {
     }
 }
 
+/*
+    CODIGO PARA EL AÑADIR COMPORTAMIENTO CON JAVASCRIPT
+*/
+/* --- Estilos de Interactividad (Favoritos y Contador) --- */
+.fav-counter-container {
+    background-color: #34495e;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
 
+.card-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.btn-fav {
+    margin-top: 1rem;
+    padding: 0.6rem 0.8rem;
+    background-color: #ecf0f1;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.btn-fav:hover {
+    background-color: #fce4e4;
+}
+
+/* --- Estilos del Formulario (Punto 4) --- */
+.form-section {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 3rem;
+}
+
+.form-section h2 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e67e22;
+    display: inline-block;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #e67e22;
+}
+
+/* Mensajes de Validación JS */
+.form-message {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    display: none;
+}
+
+.form-message.error {
+    display: block;
+    color: #c0392b;
+}
+
+.form-message.exito {
+    display: block;
+    color: #27ae60;
+}

@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetario de Cocina - TheMealDB</title>
-    <!-- Punto 3: Enlace a la hoja de estilos externa -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Estructura Semántica: Header y Nav -->
+    <!-- Header y Nav con contador interactivo -->
     <header class="header">
         <div class="logo">
             <h1>🍳 SaborDB</h1>
@@ -18,32 +17,35 @@
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#recetas">Recetas</a></li>
-                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#sugerir">Sugerir</a></li>
+                <li class="fav-counter-container">❤️ Favoritos: <span id="fav-count">0</span></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Estructura Semántica: Main -->
     <main class="main-content">
         
-        <!-- Sección Hero / Bienvenida -->
+        <!-- Sección Hero -->
         <section id="inicio" class="hero-section">
             <h2>Encuentra tus recetas favoritas</h2>
             <p>Explora miles de platillos utilizando la base de datos de TheMealDB.</p>
         </section>
 
-        <!-- Sección de Grid para las Recetas -->
+        <!-- Sección de Recetas con interactividad de Favoritos -->
         <section id="recetas" class="recipes-section">
             <h2>Recetas Destacadas</h2>
             
             <div class="recipes-grid">
                 <!-- Tarjeta 1 -->
                 <article class="recipe-card">
-                    <img src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg" alt="Arrabiata">
+                    <img src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg" alt="Spaghetti alla carbonara">
                     <div class="recipe-info">
-                        <h3>Spaghetti alla carbonara </h3>
+                        <h3>Spaghetti alla carbonara</h3>
                         <p>Categoría: Italian</p>
-                        <a href="https://www.themealdb.com/meal/52982-spaghetti-alla-carbonara-recipe" target="_blank" class="btn">Ver Receta Completa</a>
+                        <div class="card-actions">
+                            <a href="https://www.themealdb.com/meal/52982" target="_blank" class="btn">Ver Receta</a>
+                            <button class="btn-fav" type="button">🤍 Me gusta</button>
+                        </div>
                     </div>
                 </article>
 
@@ -53,28 +55,61 @@
                     <div class="recipe-info">
                         <h3>Beef Sunday Roast</h3>
                         <p>Categoría: Beef</p>
-                        <a href="https://www.themealdb.com/meal/52824" target="_blank" class="btn">Ver Receta Completa</a>
+                        <div class="card-actions">
+                            <a href="https://www.themealdb.com/meal/52824" target="_blank" class="btn">Ver Receta</a>
+                            <button class="btn-fav" type="button">🤍 Me gusta</button>
+                        </div>
                     </div>
                 </article>
 
                 <!-- Tarjeta 3 -->
                 <article class="recipe-card">
-                    <img src="https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg" alt="Teriyaki Chicken Casserole">
+                    <img src="https://www.themealdb.com/images/media/meals/wv103p1560439401.jpg" alt="Teriyaki Chicken Casserole">
                     <div class="recipe-info">
                         <h3>Teriyaki Chicken Casserole</h3>
                         <p>Categoría: Chicken</p>
-                        <a href="https://www.themealdb.com/meal/52772-teriyaki-chicken-casserole-recipe" target="_blank" class="btn">Ver Receta Completa</a>
+                        <div class="card-actions">
+                            <a href="https://www.themealdb.com/meal/52775" target="_blank" class="btn">Ver Receta</a>
+                            <button class="btn-fav" type="button">🤍 Me gusta</button>
+                        </div>
                     </div>
                 </article>
             </div>
         </section>
 
+        <!-- Punto 4: Formulario de sugerencia a validar -->
+        <section id="sugerir" class="form-section">
+            <h2>Sugerir una nueva receta</h2>
+            <form id="recipe-form" novalidate>
+                <div class="form-group">
+                    <label for="recipe-name">Nombre del platillo:</label>
+                    <input type="text" id="recipe-name" placeholder="Ej: Pizza Margarita">
+                </div>
+
+                <div class="form-group">
+                    <label for="recipe-category">Categoría:</label>
+                    <input type="text" id="recipe-category" placeholder="Ej: Pasta, Postres, etc.">
+                </div>
+
+                <div class="form-group">
+                    <label for="recipe-desc">Ingredientes clave:</label>
+                    <textarea id="recipe-desc" rows="3" placeholder="Ej: Harina, tomate, queso..."></textarea>
+                </div>
+
+                <!-- Mensaje de estado dinámico -->
+                <p id="form-message" class="form-message"></p>
+
+                <button type="submit" class="btn">Enviar Sugerencia</button>
+            </form>
+        </section>
+
     </main>
 
-    <!-- Estructura Semántica: Footer -->
     <footer class="footer">
         <p>&copy; 2026 Recetario de Cocina - Alimentado por <a href="https://www.themealdb.com/" target="_blank">TheMealDB</a></p>
     </footer>
 
+    <!-- Punto 1: Enlace al archivo JavaScript al final del body -->
+    <script src="app.js"></script>
 </body>
 </html>
