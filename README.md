@@ -18,7 +18,7 @@ sabordb/
 |-----------------|----------------------------------------------|
 | Proyecto        | Recetario de Cocina (SaborDB)                |
 | API utilizada   | TheMealDB API / API REST propia              |
-| Tecnologías     | PHP, MySQL/MariaDB, Git, GitHub, JSON        |
+| Tecnologías     | PHP, MySQL, Git, GitHub, JSON        |
 | Materia         | INF240 - Programación Web                    |
 | Plataforma      | Servidor Tecnoweb (Linux) / Localhost        |
 | Estado          | ✔ Completado                                 |
