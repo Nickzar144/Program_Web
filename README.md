@@ -173,11 +173,6 @@ git remote add origin <URL-del-repositorio>
 git push -u origin main
 ```
 
----
-Fuente de datos de referencia: [TheMealDB](https://www.themealdb.com/)
-
----
-
 ## 📑 Práctica Semanal: Documentación de Arquitectura y Navegación del Sistema
 
 > **Proyecto:** Recetario de Cocina (SaborDB)  
@@ -335,3 +330,7 @@ sequenceDiagram
   "message": "Fallo de validación: los campos 'name', 'category' e 'ingredients' son obligatorios y no pueden estar vacíos."
 }
 ```
+---
+Fuente de datos de referencia: [TheMealDB](https://www.themealdb.com/)
+
+---
